@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         mkLabelNormal?.font = UIFont.boldSystemFont(ofSize: 20.0)
         mkLabelNormal?.backgroundColor = UIColor.red
         mkLabelNormal?.beginFadeAnimation(isFadeIn: true, completionBlock: { (finished, text) in
-            
+            print("animation finished")
         })
         self.view.addSubview(mkLabelNormal!)
         
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         mkLabelAscend?.font = UIFont.boldSystemFont(ofSize: 20.0)
         mkLabelAscend?.backgroundColor = UIColor.yellow
         mkLabelAscend?.beginFadeAnimation(isFadeIn: true, displayType: .ascend, completionBlock: { (finished, text) in
-            
+            print("animation finished")
         })
         self.view.addSubview(mkLabelAscend!)
         

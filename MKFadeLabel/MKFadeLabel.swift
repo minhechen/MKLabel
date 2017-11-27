@@ -9,11 +9,11 @@
 import UIKit
 
 enum MKFadeLabelDisplayType {
-    case normal
-    case ascend
-    case descend
-    case middle
-    case other
+    case normal // Irregular fade in or fade out animation
+    case ascend // Begin animation from begin to the end
+    case descend // Begin animation from end to the begin
+    case middle // Begin animation from middle of labe text
+    case other // default animation
 }
 
 class MKFadeLabel: UILabel {
