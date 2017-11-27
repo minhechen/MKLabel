@@ -1,4 +1,7 @@
 # MKFadeLabel
+
+![img](https://github.com/minhechen/MKFadeLabel/blob/master/MKFadeLabel/ScreenShot/MKFadeLabel.gif)
+
 ## create a fantastic UILabel with fade in or fade out effect
 ```
 mkLabelNormal = MKFadeLabel(frame: CGRect(x: 0, y: 90, width: self.view.frame.size.width, height: 100))
@@ -23,4 +26,4 @@ mkLabelAscend?.beginFadeAnimation(isFadeIn: true, displayType: .ascend, completi
             print("animation finished")
         })
 ```
-![img](https://github.com/minhechen/MKFadeLabel/blob/master/MKFadeLabel/ScreenShot/MKFadeLabel.gif)
+
