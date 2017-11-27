@@ -23,3 +23,4 @@ mkLabelAscend?.beginFadeAnimation(isFadeIn: true, displayType: .ascend, completi
             print("animation finished")
         })
 ```
+(https://github.com/minhechen/MKFadeLabel/blob/master/MKFadeLabel/ScreenShot/MKFadeLabel.gif)
