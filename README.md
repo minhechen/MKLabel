@@ -2,8 +2,8 @@
 ## create a fantastic UILabel with fade in or fade out effect
 ```
 mkLabelNormal = MKFadeLabel(frame: CGRect(x: 0, y: 90, width: self.view.frame.size.width, height: 100))
-        mkLabelNormal?.text = "Do any additional setup after loading the view, typically from a nib,Do any additional setup after loading the view, typically from a nib,"
-        mkLabelNormal?.beginFadeAnimation(isFadeIn: true, completionBlock: { (finished, text) in
+mkLabelNormal?.text = "Do any additional setup after loading the view, typically from a nib,Do any additional setup after loading the view, typically from a nib,"
+mkLabelNormal?.beginFadeAnimation(isFadeIn: true, completionBlock: { (finished, text) in
             print("animation finished")
         })
 ```
