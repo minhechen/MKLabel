@@ -17,4 +17,9 @@ enum MKFadeLabelDisplayType {
     case middle // Begin animation from middle of labe text
     case other // default animation
 }
+mkLabelAscend = MKFadeLabel(frame: CGRect(x: 0, y: 210, width: self.view.frame.size.width, height: 100))
+mkLabelAscend?.text = "Do any additional setup after loading the view, typically from a nib,Do any additional setup after loading the view, typically from a nib"
+mkLabelAscend?.beginFadeAnimation(isFadeIn: true, displayType: .ascend, completionBlock: { (finished, text) in
+            print("animation finished")
+        })
 ```
