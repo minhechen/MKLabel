@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		81014C501FC41083004C64CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81014C4F1FC41083004C64CC /* UIKit.framework */; };
 		81014C521FC4108B004C64CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81014C511FC4108B004C64CC /* CoreGraphics.framework */; };
+		8108711E1FD7C175002FD204 /* RegexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8108711D1FD7C175002FD204 /* RegexManager.swift */; };
+		810E86E31FD90C0C00037BA4 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E86E21FD90C0C00037BA4 /* MKColor.swift */; };
+		811390E31FCD3840008ED00F /* MKTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811390E21FCD3840008ED00F /* MKTagModel.swift */; };
 		81B8D06E1FCC401300BB6ED9 /* MKFadeLabel.gif in Resources */ = {isa = PBXBuildFile; fileRef = 81B8D06D1FCC401300BB6ED9 /* MKFadeLabel.gif */; };
 		81F9F2201FBD3E6000B7834C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9F21F1FBD3E6000B7834C /* AppDelegate.swift */; };
 		81F9F2221FBD3E6000B7834C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9F2211FBD3E6000B7834C /* ViewController.swift */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		81014C4F1FC41083004C64CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81014C511FC4108B004C64CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8108711D1FD7C175002FD204 /* RegexManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexManager.swift; sourceTree = "<group>"; };
+		810E86E21FD90C0C00037BA4 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKColor.swift; sourceTree = "<group>"; };
+		811390E21FCD3840008ED00F /* MKTagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTagModel.swift; sourceTree = "<group>"; };
 		81B8D06D1FCC401300BB6ED9 /* MKFadeLabel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MKFadeLabel.gif; sourceTree = "<group>"; };
 		81F9F21C1FBD3E6000B7834C /* MKFadeLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKFadeLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F9F21F1FBD3E6000B7834C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				81F9F24E1FBD3EA100B7834C /* MKFadeLabel.swift */,
+				811390E21FCD3840008ED00F /* MKTagModel.swift */,
+				8108711D1FD7C175002FD204 /* RegexManager.swift */,
+				810E86E21FD90C0C00037BA4 /* MKColor.swift */,
 			);
 			name = MKFadeLabel;
 			sourceTree = "<group>";
@@ -298,7 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8108711E1FD7C175002FD204 /* RegexManager.swift in Sources */,
+				811390E31FCD3840008ED00F /* MKTagModel.swift in Sources */,
 				81F9F24F1FBD3EA100B7834C /* MKFadeLabel.swift in Sources */,
+				810E86E31FD90C0C00037BA4 /* MKColor.swift in Sources */,
 				81F9F2221FBD3E6000B7834C /* ViewController.swift in Sources */,
 				81F9F2201FBD3E6000B7834C /* AppDelegate.swift in Sources */,
 			);
