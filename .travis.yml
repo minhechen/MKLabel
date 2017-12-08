@@ -1,2 +1,2 @@
-language: swift3.0
+language: swift
 osx_image: xcode8
