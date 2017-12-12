@@ -59,6 +59,7 @@ class ADDisplayView: UIView {
         //let sHeight = self.frame.size.height
         mkFadeLabel = MKFadeLabel(frame: CGRect(x: 0, y: 450, width: sWidth, height: 100))
         mkFadeLabel?.text = "Talk is cheap. Show me the code\n快快参与#微博话题#"
+//        mkFadeLabel?.text = "The world is very complex, baidu know you more\n李厂长在此等你#百度一下#"
         mkFadeLabel?.numberOfLines = 0
         mkFadeLabel?.lineBreakMode = .byWordWrapping
         mkFadeLabel?.textAlignment = .center

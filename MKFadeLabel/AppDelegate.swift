@@ -22,8 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootNC = UINavigationController(rootViewController: homeVC)
         window?.rootViewController = rootNC
         window?.makeKeyAndVisible()
-            
+        // example for weibo
         ADDisplayView.shared.showAdView(UIImage.init(named: "ad_background"))
+        // example for baidu
+//        ADDisplayView.shared.showAdView(UIImage.init(named: "ad_baidu"))
 
         return true
     }

@@ -14,6 +14,7 @@
 		811390E31FCD3840008ED00F /* MKTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811390E21FCD3840008ED00F /* MKTagModel.swift */; };
 		815528411FDA62390087B264 /* ADDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815528401FDA62390087B264 /* ADDisplayView.swift */; };
 		81DD96C31FDFC0B400FEB499 /* weiboExample.gif in Resources */ = {isa = PBXBuildFile; fileRef = 81DD96C21FDFC0B400FEB499 /* weiboExample.gif */; };
+		81DD96C51FDFCB8800FEB499 /* baiduExample.gif in Resources */ = {isa = PBXBuildFile; fileRef = 81DD96C41FDFCB8800FEB499 /* baiduExample.gif */; };
 		81F9F2201FBD3E6000B7834C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9F21F1FBD3E6000B7834C /* AppDelegate.swift */; };
 		81F9F2221FBD3E6000B7834C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9F2211FBD3E6000B7834C /* ViewController.swift */; };
 		81F9F2251FBD3E6000B7834C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F9F2231FBD3E6000B7834C /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		811390E21FCD3840008ED00F /* MKTagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTagModel.swift; sourceTree = "<group>"; };
 		815528401FDA62390087B264 /* ADDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADDisplayView.swift; sourceTree = "<group>"; };
 		81DD96C21FDFC0B400FEB499 /* weiboExample.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = weiboExample.gif; sourceTree = "<group>"; };
+		81DD96C41FDFCB8800FEB499 /* baiduExample.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = baiduExample.gif; sourceTree = "<group>"; };
 		81F9F21C1FBD3E6000B7834C /* MKFadeLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKFadeLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F9F21F1FBD3E6000B7834C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81F9F2211FBD3E6000B7834C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		81B8D06C1FCC3FF700BB6ED9 /* ScreenShot */ = {
 			isa = PBXGroup;
 			children = (
+				81DD96C41FDFCB8800FEB499 /* baiduExample.gif */,
 				81DD96C21FDFC0B400FEB499 /* weiboExample.gif */,
 			);
 			path = ScreenShot;
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F9F2271FBD3E6000B7834C /* Assets.xcassets in Resources */,
+				81DD96C51FDFCB8800FEB499 /* baiduExample.gif in Resources */,
 				81F9F2251FBD3E6000B7834C /* Main.storyboard in Resources */,
 				81DD96C31FDFC0B400FEB499 /* weiboExample.gif in Resources */,
 				81FBBD7E1FDA7C6D00BF8BE4 /* Launch Screen.storyboard in Resources */,
