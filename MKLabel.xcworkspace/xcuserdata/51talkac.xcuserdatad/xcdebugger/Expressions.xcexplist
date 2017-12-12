@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ADDisplayView.showAdView(UIImage?) -&gt; ():ADDisplayView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UIApplication.shared.delegate?.window">
+            </PersistentString>
+            <PersistentString
+               value = "UIScreen.main.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "UIApplication.shared.keyWindow">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MKFadeLabel.mkGetTapFrame(CGPoint, result : (String, _NSRange, Int) -&gt; ()) -&gt; Bool:MKFadeLabel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tagsModelArray">
+            </PersistentString>
+            <PersistentString
+               value = "tagsModel.range">
+            </PersistentString>
+            <PersistentString
+               value = "self.bounds.size.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MKFadeLabel.tapEffectWithStatus(Bool) -&gt; ():MKFadeLabel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tapEffectDictionary?.values.first">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

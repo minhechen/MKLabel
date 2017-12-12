@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MKFadeLabel
+//  MKLabel
 //
 //  Created by AC-Mac on 16/11/2017.
 //  Copyright © 2017 MackChan  minhechen@gmail.com. All rights reserved.

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81F9F21B1FBD3E6000B7834C"
-               BuildableName = "MKFadeLabel.app"
-               BlueprintName = "MKFadeLabel"
-               ReferencedContainer = "container:MKFadeLabel.xcodeproj">
+               BuildableName = "MKLabel.app"
+               BlueprintName = "MKLabel"
+               ReferencedContainer = "container:MKLabel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81F9F22F1FBD3E6000B7834C"
-               BuildableName = "MKFadeLabelTests.xctest"
-               BlueprintName = "MKFadeLabelTests"
-               ReferencedContainer = "container:MKFadeLabel.xcodeproj">
+               BuildableName = "MKLabelTests.xctest"
+               BlueprintName = "MKLabelTests"
+               ReferencedContainer = "container:MKLabel.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81F9F23A1FBD3E6100B7834C"
-               BuildableName = "MKFadeLabelUITests.xctest"
-               BlueprintName = "MKFadeLabelUITests"
-               ReferencedContainer = "container:MKFadeLabel.xcodeproj">
+               BuildableName = "MKLabelUITests.xctest"
+               BlueprintName = "MKLabelUITests"
+               ReferencedContainer = "container:MKLabel.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "81F9F21B1FBD3E6000B7834C"
-            BuildableName = "MKFadeLabel.app"
-            BlueprintName = "MKFadeLabel"
-            ReferencedContainer = "container:MKFadeLabel.xcodeproj">
+            BuildableName = "MKLabel.app"
+            BlueprintName = "MKLabel"
+            ReferencedContainer = "container:MKLabel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "81F9F21B1FBD3E6000B7834C"
-            BuildableName = "MKFadeLabel.app"
-            BlueprintName = "MKFadeLabel"
-            ReferencedContainer = "container:MKFadeLabel.xcodeproj">
+            BuildableName = "MKLabel.app"
+            BlueprintName = "MKLabel"
+            ReferencedContainer = "container:MKLabel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "81F9F21B1FBD3E6000B7834C"
-            BuildableName = "MKFadeLabel.app"
-            BlueprintName = "MKFadeLabel"
-            ReferencedContainer = "container:MKFadeLabel.xcodeproj">
+            BuildableName = "MKLabel.app"
+            BlueprintName = "MKLabel"
+            ReferencedContainer = "container:MKLabel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

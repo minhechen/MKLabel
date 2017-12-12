@@ -1,14 +1,14 @@
 //
-//  MKFadeLabelUITests.swift
-//  MKFadeLabelUITests
+//  MKLabelUITests.swift
+//  MKLabelUITests
 //
-//  Created by AC-Mac on 16/11/2017.
+//  Created by AC-Mac on 12/12/2017.
 //  Copyright © 2017 MackChan  minhechen@gmail.com. All rights reserved.
 //
 
 import XCTest
 
-class MKFadeLabelUITests: XCTestCase {
+class MKLabelUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

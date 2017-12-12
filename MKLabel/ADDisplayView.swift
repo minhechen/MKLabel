@@ -1,6 +1,6 @@
 //
 //  ADDisplayView.swift
-//  MKFadeLabel
+//  MKLabel
 //
 //  Created by AC-Mac on 08/12/2017.
 //  Copyright © 2017 MackChan  minhechen@gmail.com. All rights reserved.
@@ -15,7 +15,7 @@ class ADDisplayView: UIView {
     var closeAdButton: UIButton?
     var adTimer: Timer?
     var adTimerInternal: Int = 0
-    var mkFadeLabel: MKFadeLabel?
+    var mkFadeLabel: MKLabel?
     var adDuration: TimeInterval = 6.0
     /*
     // Only override draw() if you perform custom drawing.
@@ -57,7 +57,7 @@ class ADDisplayView: UIView {
     func addFadeLabel() -> Void {
         let sWidth = self.frame.size.width
         //let sHeight = self.frame.size.height
-        mkFadeLabel = MKFadeLabel(frame: CGRect(x: 0, y: 450, width: sWidth, height: 100))
+        mkFadeLabel = MKLabel(frame: CGRect(x: 0, y: 450, width: sWidth, height: 100))
         mkFadeLabel?.text = "Talk is cheap. Show me the code\n快快参与#微博话题#"
 //        mkFadeLabel?.text = "The world is very complex, baidu know you more\n李厂长在此等你#百度一下#"
         mkFadeLabel?.numberOfLines = 0

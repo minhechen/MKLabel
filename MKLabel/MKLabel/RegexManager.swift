@@ -1,6 +1,6 @@
 //
 //  RegexManager.swift
-//  MKFadeLabel
+//  MKLabel
 //
 //  Created by AC-Mac on 06/12/2017.
 //  Copyright © 2017 MackChan  minhechen@gmail.com. All rights reserved.

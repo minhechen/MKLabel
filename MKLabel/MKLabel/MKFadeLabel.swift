@@ -1,6 +1,6 @@
 //
 //  MKLabel.swift
-//  MKFadeLabel
+//  MKLabel
 //
 //  Created by AC-Mac on 16/11/2017.
 //  Copyright © 2017 MackChan  minhechen@gmail.com. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum MKFadeLabelDisplayType {
+enum MKLabelDisplayType {
     case normal // Irregular fade in or fade out animation
     case ascend // Begin animation from begin to the end
     case descend // Begin animation from end to the begin
@@ -16,7 +16,7 @@ enum MKFadeLabelDisplayType {
     case other // default animation
 }
 
-class MKFadeLabel: UILabel {
+class MKLabel: UILabel {
     // animation
     var mkDisplayLink: CADisplayLink?
     private var attributedTextString: NSMutableAttributedString?
@@ -29,7 +29,7 @@ class MKFadeLabel: UILabel {
     
     typealias completionBlock = (Bool, String) -> Void
     private var completion: completionBlock? /// animation end block
-    fileprivate var displayType: MKFadeLabelDisplayType = .normal /// display type
+    fileprivate var displayType: MKLabelDisplayType = .normal /// display type
     
     ////////////////////////////////////
     // tags
@@ -94,7 +94,7 @@ class MKFadeLabel: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        mkDisplayLink = CADisplayLink.init(target: self, selector: #selector(MKFadeLabel.updateLabelDisplay))
+        mkDisplayLink = CADisplayLink.init(target: self, selector: #selector(MKLabel.updateLabelDisplay))
         mkDisplayLink?.add(to: .current, forMode: .commonModes)
         mkDisplayLink?.isPaused = true
     }
@@ -106,7 +106,7 @@ class MKFadeLabel: UILabel {
     /* begin fade in or fade out animation
      * fadeIn: true is fade in false is fade out
     */
-    func beginFadeAnimation(isFadeIn fadeIn: Bool, displayType: MKFadeLabelDisplayType = .normal, completionBlock: @escaping completionBlock) {
+    func beginFadeAnimation(isFadeIn fadeIn: Bool, displayType: MKLabelDisplayType = .normal, completionBlock: @escaping completionBlock) {
         self.displayType = displayType
         self.completion = completionBlock
         self.isFadeIn = fadeIn

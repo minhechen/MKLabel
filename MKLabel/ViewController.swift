@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  MKFadeLabel
+//  MKLabel
 //
 //  Created by AC-Mac on 16/11/2017.
 //  Copyright © 2017 MackChan  minhechen@gmail.com. All rights reserved.
@@ -11,10 +11,10 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let baseY: CGFloat = 40.0
     var clickButton: UIButton?
-    var mkLabelNormal: MKFadeLabel?
-    var mkLabelAscend: MKFadeLabel?
-    var mkLabelDescend: MKFadeLabel?
-    var mkLabelMiddle: MKFadeLabel?
+    var mkLabelNormal: MKLabel?
+    var mkLabelAscend: MKLabel?
+    var mkLabelDescend: MKLabel?
+    var mkLabelMiddle: MKLabel?
     var mainTableView: UITableView?
     var temView: UIView!
     override func viewDidLoad() {
@@ -44,7 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             temView.addSubview(clickButton!)
             
-            mkLabelNormal = MKFadeLabel(frame: CGRect(x: 0, y: 90 + baseY, width: self.view.frame.size.width, height: 100))
+            mkLabelNormal = MKLabel(frame: CGRect(x: 0, y: 90 + baseY, width: self.view.frame.size.width, height: 100))
             mkLabelNormal?.text = "Do any additional setup after loading the view, typically from a nib,Do any additional setup after loading the view, typically from a nib,"
             mkLabelNormal?.numberOfLines = 0
             mkLabelNormal?.lineBreakMode = .byWordWrapping
@@ -57,7 +57,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             temView.addSubview(mkLabelNormal!)
             
             /// Ascend display label
-            mkLabelAscend = MKFadeLabel(frame: CGRect(x: 0, y: 210 + baseY, width: self.view.frame.size.width, height: 100))
+            mkLabelAscend = MKLabel(frame: CGRect(x: 0, y: 210 + baseY, width: self.view.frame.size.width, height: 100))
             mkLabelAscend?.text = "swift,#topic# D#o @any additional setup after loading the view, typically nice from@gmail.com a nib,772078507@qq.com after loading the @view, typically from a nibd,Hello"
             mkLabelAscend?.numberOfLines = 0
             mkLabelAscend?.lineBreakMode = .byWordWrapping
@@ -73,7 +73,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             temView.addSubview(mkLabelAscend!)
             
             /// Descend display label
-            mkLabelDescend = MKFadeLabel(frame: CGRect(x: 0, y: 330 + baseY, width: self.view.frame.size.width, height: 100))
+            mkLabelDescend = MKLabel(frame: CGRect(x: 0, y: 330 + baseY, width: self.view.frame.size.width, height: 100))
             mkLabelDescend?.text = "swift,#topic# D#o @any additional setup after loading the view, typically nice from@gmail.com a nib,772078507@qq.com after loading the @view, typically from a nibd,Hello"
             mkLabelDescend?.numberOfLines = 0
             mkLabelDescend?.lineBreakMode = .byWordWrapping
@@ -90,7 +90,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             temView.addSubview(mkLabelDescend!)
             
             /// Middle display label
-            mkLabelMiddle = MKFadeLabel(frame: CGRect(x: 0, y: 450 + baseY, width: self.view.frame.size.width, height: 100))
+            mkLabelMiddle = MKLabel(frame: CGRect(x: 0, y: 450 + baseY, width: self.view.frame.size.width, height: 100))
             mkLabelMiddle?.text = "swift,#topic# D#o @any additional setup after loading the view, typically nice from@gmail.com a nib,772078507@qq.com after loading the @view, typically from a nibd,Hello"
             mkLabelMiddle?.numberOfLines = 0
             mkLabelMiddle?.lineBreakMode = .byWordWrapping

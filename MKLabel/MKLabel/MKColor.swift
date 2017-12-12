@@ -1,6 +1,6 @@
 //
 //  MKColor.swift
-//  MKFadeLabel
+//  MKLabel
 //
 //  Created by AC-Mac on 07/12/2017.
 //  Copyright © 2017 MackChan  minhechen@gmail.com. All rights reserved.

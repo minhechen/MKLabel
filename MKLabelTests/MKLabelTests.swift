@@ -1,15 +1,14 @@
 //
-//  MKFadeLabelTests.swift
-//  MKFadeLabelTests
+//  MKLabelTests.swift
+//  MKLabelTests
 //
-//  Created by AC-Mac on 16/11/2017.
+//  Created by AC-Mac on 12/12/2017.
 //  Copyright © 2017 MackChan  minhechen@gmail.com. All rights reserved.
 //
 
 import XCTest
-@testable import MKFadeLabel
 
-class MKFadeLabelTests: XCTestCase {
+class MKLabelTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
