@@ -1,7 +1,8 @@
 MKFadeLabel
 ==============
 [![Build Status](https://travis-ci.org/minhechen/MKFadeLabel.svg?branch=master)](https://travis-ci.org/minhechen/MKFadeLabel)
-![](https://img.shields.io/badge/platform-iOS-blue.svg)
+![Platform](https://img.shields.io/badge/platform-iOS-blue.svg)
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)]
 
 ## The uesage example that used in weibo(微博) welcome ad effect
 ![Baidu](https://github.com/minhechen/MKFadeLabel/blob/master/MKFadeLabel/ScreenShot/weiboExample.gif)
