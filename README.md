@@ -1,4 +1,4 @@
-# MKFadeLabel
+MKFadeLabel
 ==============
 [![Build Status](https://travis-ci.org/minhechen/MKFadeLabel.svg?branch=master)](https://travis-ci.org/minhechen/MKFadeLabel)
 
