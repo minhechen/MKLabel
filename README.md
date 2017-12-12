@@ -1,9 +1,9 @@
 # MKFadeLabel
 ## The uesage example that used in weibo(微博) welcome ad effect
-![img](https://github.com/minhechen/MKFadeLabel/blob/master/MKFadeLabel/ScreenShot/weiboExample.gif)
+![Baidu](https://github.com/minhechen/MKFadeLabel/blob/master/MKFadeLabel/ScreenShot/weiboExample.gif)
 
 ## The uesage example that used in baidu(百度) welcome ad effect
-![img](https://github.com/minhechen/MKFadeLabel/blob/master/MKFadeLabel/ScreenShot/weiboExample.gif)
+![Weibo](https://github.com/minhechen/MKFadeLabel/blob/master/MKFadeLabel/ScreenShot/weiboExample.gif)
 
 ## create a fantastic UILabel with fade in or fade out effect
 ```
