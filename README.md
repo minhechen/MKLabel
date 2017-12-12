@@ -1,6 +1,9 @@
 # MKFadeLabel
+## The uesage example that used in weibo(微博) welcome ad effect
+![img](https://github.com/minhechen/MKFadeLabel/blob/master/MKFadeLabel/ScreenShot/weiboExample.gif)
 
-![img](https://github.com/minhechen/MKFadeLabel/blob/master/MKFadeLabel/ScreenShot/MKFadeLabel.gif)
+## The uesage example that used in baidu(百度) welcome ad effect
+![img](https://github.com/minhechen/MKFadeLabel/blob/master/MKFadeLabel/ScreenShot/weiboExample.gif)
 
 ## create a fantastic UILabel with fade in or fade out effect
 ```
@@ -11,7 +14,7 @@ mkLabelNormal?.beginFadeAnimation(isFadeIn: true, completionBlock: { (finished, 
         })
 ```
 
-## you can also create other three fade in or fade out effect by ```enum```:
+## You can also create other three fade in or fade out effect by ```enum```:
 ```
 enum MKFadeLabelDisplayType {
     case normal // Irregular fade in or fade out animation
@@ -27,3 +30,37 @@ mkLabelAscend?.beginFadeAnimation(isFadeIn: true, displayType: .ascend, completi
         })
 ```
 
+## You can also create tags for the text and add tap action :
+```
+mkLabelDescend = MKFadeLabel(frame: CGRect(x: 0, y: 330 + baseY, width: self.view.frame.size.width, height: 100))
+            mkLabelDescend?.text = "swift,#topic# D#o @any additional setup after loading the view, typically nice from@gmail.com a nib,772078507@qq.com after loading the @view, typically from a nibd,Hello"
+            mkLabelDescend?.numberOfLines = 0
+            mkLabelDescend?.lineBreakMode = .byWordWrapping
+            mkLabelDescend?.textAlignment = .center
+            mkLabelDescend?.font = UIFont.systemFont(ofSize: 16.0)
+            mkLabelDescend?.backgroundColor = UIColor.purple
+            mkLabelDescend?.beginFadeAnimation(isFadeIn: true, displayType: .descend, completionBlock: { (finished, text) in
+                print("click Descend tag:\(text)")
+            })
+            mkLabelDescend?.mkAddAttributeTapAction(nil, highlightTapAction: { (text, range, index) in
+                print("click tag:\(text)")
+            })
+```
+
+## You can even custom your own tags for the text, only by appoint the ```tags``` :
+```
+mkLabelMiddle = MKFadeLabel(frame: CGRect(x: 0, y: 450 + baseY, width: self.view.frame.size.width, height: 100))
+            mkLabelMiddle?.text = "swift,#topic# D#o @any additional setup after loading the view, typically nice from@gmail.com a nib,772078507@qq.com after loading the @view, typically from a nibd,Hello"
+            mkLabelMiddle?.numberOfLines = 0
+            mkLabelMiddle?.lineBreakMode = .byWordWrapping
+            mkLabelMiddle?.textAlignment = .left
+            
+            mkLabelMiddle?.font = UIFont.systemFont(ofSize: 13.0)
+            mkLabelMiddle?.backgroundColor = UIColor.green
+            mkLabelMiddle?.beginFadeAnimation(isFadeIn: true, displayType: .middle, completionBlock: { (finished, text) in
+                
+            })
+            mkLabelMiddle?.mkAddAttributeTapAction(["swift","topic","loading","nice","Hello"], highlightTapAction: { (text, range, index) in
+                print("tap text is:\(text)")
+            })
+```
