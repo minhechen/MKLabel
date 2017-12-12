@@ -22,7 +22,7 @@ class MKFadeLabel: UILabel {
     private var attributedTextString: NSMutableAttributedString?
     private var delayTimeArray: [Double] = [Double]()
     private var animationTimeArray: [Double] = [Double]()
-    let durationTime: CFTimeInterval = 2.5
+    var durationTime: CFTimeInterval = 2.5
     var isFadeIn: Bool = false
     private var beginTime: CFTimeInterval?
     private var endTime: CFTimeInterval?
@@ -228,8 +228,7 @@ class MKFadeLabel: UILabel {
         mutableAttributedText.addAttribute(NSForegroundColorAttributeName, value: color, range: NSRange(location: 0, length: attributedText.length))
         //////////////////
         // add line spacing
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = lineSpace
+        let paragraphStyle = self.mkParagraphStyle()
 //        paragraphStyle.lineHeightMultiple = lineHeightMultiple
         
         // Line spacing attribute

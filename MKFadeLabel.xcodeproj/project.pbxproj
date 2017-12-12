@@ -12,15 +12,16 @@
 		8108711E1FD7C175002FD204 /* RegexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8108711D1FD7C175002FD204 /* RegexManager.swift */; };
 		810E86E31FD90C0C00037BA4 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E86E21FD90C0C00037BA4 /* MKColor.swift */; };
 		811390E31FCD3840008ED00F /* MKTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811390E21FCD3840008ED00F /* MKTagModel.swift */; };
-		81B8D06E1FCC401300BB6ED9 /* MKFadeLabel.gif in Resources */ = {isa = PBXBuildFile; fileRef = 81B8D06D1FCC401300BB6ED9 /* MKFadeLabel.gif */; };
+		815528411FDA62390087B264 /* ADDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815528401FDA62390087B264 /* ADDisplayView.swift */; };
+		81DD96C31FDFC0B400FEB499 /* weiboExample.gif in Resources */ = {isa = PBXBuildFile; fileRef = 81DD96C21FDFC0B400FEB499 /* weiboExample.gif */; };
 		81F9F2201FBD3E6000B7834C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9F21F1FBD3E6000B7834C /* AppDelegate.swift */; };
 		81F9F2221FBD3E6000B7834C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9F2211FBD3E6000B7834C /* ViewController.swift */; };
 		81F9F2251FBD3E6000B7834C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F9F2231FBD3E6000B7834C /* Main.storyboard */; };
 		81F9F2271FBD3E6000B7834C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F9F2261FBD3E6000B7834C /* Assets.xcassets */; };
-		81F9F22A1FBD3E6000B7834C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F9F2281FBD3E6000B7834C /* LaunchScreen.storyboard */; };
 		81F9F2351FBD3E6100B7834C /* MKFadeLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9F2341FBD3E6100B7834C /* MKFadeLabelTests.swift */; };
 		81F9F2401FBD3E6100B7834C /* MKFadeLabelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9F23F1FBD3E6100B7834C /* MKFadeLabelUITests.swift */; };
 		81F9F24F1FBD3EA100B7834C /* MKFadeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9F24E1FBD3EA100B7834C /* MKFadeLabel.swift */; };
+		81FBBD7E1FDA7C6D00BF8BE4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FBBD7D1FDA7C6D00BF8BE4 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +47,13 @@
 		8108711D1FD7C175002FD204 /* RegexManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexManager.swift; sourceTree = "<group>"; };
 		810E86E21FD90C0C00037BA4 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKColor.swift; sourceTree = "<group>"; };
 		811390E21FCD3840008ED00F /* MKTagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTagModel.swift; sourceTree = "<group>"; };
-		81B8D06D1FCC401300BB6ED9 /* MKFadeLabel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MKFadeLabel.gif; sourceTree = "<group>"; };
+		815528401FDA62390087B264 /* ADDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADDisplayView.swift; sourceTree = "<group>"; };
+		81DD96C21FDFC0B400FEB499 /* weiboExample.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = weiboExample.gif; sourceTree = "<group>"; };
 		81F9F21C1FBD3E6000B7834C /* MKFadeLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKFadeLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F9F21F1FBD3E6000B7834C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81F9F2211FBD3E6000B7834C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81F9F2241FBD3E6000B7834C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81F9F2261FBD3E6000B7834C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		81F9F2291FBD3E6000B7834C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81F9F22B1FBD3E6000B7834C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81F9F2301FBD3E6100B7834C /* MKFadeLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKFadeLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F9F2341FBD3E6100B7834C /* MKFadeLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKFadeLabelTests.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		81F9F23F1FBD3E6100B7834C /* MKFadeLabelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKFadeLabelUITests.swift; sourceTree = "<group>"; };
 		81F9F2411FBD3E6100B7834C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81F9F24E1FBD3EA100B7834C /* MKFadeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKFadeLabel.swift; sourceTree = "<group>"; };
+		81FBBD7D1FDA7C6D00BF8BE4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		815528421FDA62650087B264 /* MKLabel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MKLabel;
+			sourceTree = "<group>";
+		};
 		81B8D06C1FCC3FF700BB6ED9 /* ScreenShot */ = {
 			isa = PBXGroup;
 			children = (
-				81B8D06D1FCC401300BB6ED9 /* MKFadeLabel.gif */,
+				81DD96C21FDFC0B400FEB499 /* weiboExample.gif */,
 			);
 			path = ScreenShot;
 			sourceTree = "<group>";
@@ -133,11 +142,12 @@
 			children = (
 				81F9F24D1FBD3E6A00B7834C /* MKFadeLabel */,
 				81F9F21F1FBD3E6000B7834C /* AppDelegate.swift */,
+				815528401FDA62390087B264 /* ADDisplayView.swift */,
 				81F9F2211FBD3E6000B7834C /* ViewController.swift */,
 				81F9F2231FBD3E6000B7834C /* Main.storyboard */,
 				81F9F2261FBD3E6000B7834C /* Assets.xcassets */,
-				81F9F2281FBD3E6000B7834C /* LaunchScreen.storyboard */,
 				81F9F22B1FBD3E6000B7834C /* Info.plist */,
+				81FBBD7D1FDA7C6D00BF8BE4 /* Launch Screen.storyboard */,
 				81B8D06C1FCC3FF700BB6ED9 /* ScreenShot */,
 			);
 			path = MKFadeLabel;
@@ -164,6 +174,7 @@
 		81F9F24D1FBD3E6A00B7834C /* MKFadeLabel */ = {
 			isa = PBXGroup;
 			children = (
+				815528421FDA62650087B264 /* MKLabel */,
 				81F9F24E1FBD3EA100B7834C /* MKFadeLabel.swift */,
 				811390E21FCD3840008ED00F /* MKTagModel.swift */,
 				8108711D1FD7C175002FD204 /* RegexManager.swift */,
@@ -279,10 +290,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F9F22A1FBD3E6000B7834C /* LaunchScreen.storyboard in Resources */,
 				81F9F2271FBD3E6000B7834C /* Assets.xcassets in Resources */,
 				81F9F2251FBD3E6000B7834C /* Main.storyboard in Resources */,
-				81B8D06E1FCC401300BB6ED9 /* MKFadeLabel.gif in Resources */,
+				81DD96C31FDFC0B400FEB499 /* weiboExample.gif in Resources */,
+				81FBBD7E1FDA7C6D00BF8BE4 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815528411FDA62390087B264 /* ADDisplayView.swift in Sources */,
 				8108711E1FD7C175002FD204 /* RegexManager.swift in Sources */,
 				811390E31FCD3840008ED00F /* MKTagModel.swift in Sources */,
 				81F9F24F1FBD3EA100B7834C /* MKFadeLabel.swift in Sources */,
@@ -354,14 +366,6 @@
 				81F9F2241FBD3E6000B7834C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		81F9F2281FBD3E6000B7834C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81F9F2291FBD3E6000B7834C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -466,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MKFadeLabel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -479,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MKFadeLabel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
