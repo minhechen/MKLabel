@@ -4,13 +4,14 @@ MKLabel
 ![Platform](https://img.shields.io/badge/platform-iOS-blue.svg)
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/minhechen/MKLabel/master/LICENSE)&nbsp;
 
-## The uesage example that used in weibo(微博) welcome ad effect
+## The uesage example that used in weibo(微博) landing page effect
 ![Baidu](https://github.com/minhechen/MKLabel/blob/master/MKLabel/ScreenShot/weiboExample.gif)
 
 ## The uesage example that used in baidu(百度) welcome ad effect
 ![Weibo](https://github.com/minhechen/MKLabel/blob/master/MKLabel/ScreenShot/baiduExample.gif)
 
-## create a fantastic UILabel with fade in or fade out effect
+## Create a fantastic UILabel with fade in or fade out effect
+
 ```
 mkLabelNormal = MKLabel(frame: CGRect(x: 0, y: 90, width: self.view.frame.size.width, height: 100))
 mkLabelNormal?.text = "Do any additional setup after loading the view, typically from a nib,Do any additional setup after loading the view, typically from a nib,"
