@@ -20,7 +20,7 @@ mkLabelNormal?.beginFadeAnimation(isFadeIn: true, completionBlock: { (finished, 
         })
 ```
 
-## You can also create other three fade in or fade out effect by ```enum```:
+## You can also create other three fade in or fade out effects by ```enum```:
 ```
 enum MKLabelDisplayType {
     case normal // Irregular fade in or fade out animation
@@ -36,7 +36,7 @@ mkLabelAscend?.beginFadeAnimation(isFadeIn: true, displayType: .ascend, completi
         })
 ```
 
-## You can also create tags for the text and add tap action :
+## You can also create tags within the text and add tap action :
 ```
 mkLabelDescend = MKLabel(frame: CGRect(x: 0, y: 330 + baseY, width: self.view.frame.size.width, height: 100))
             mkLabelDescend?.text = "swift,#topic# D#o @any additional setup after loading the view, typically nice from@gmail.com a nib,772078507@qq.com after loading the @view, typically from a nibd,Hello"
@@ -53,7 +53,7 @@ mkLabelDescend = MKLabel(frame: CGRect(x: 0, y: 330 + baseY, width: self.view.fr
             })
 ```
 
-## You can even custom your own tags for the text, only by appoint the ```tags``` :
+## You can even /customize/ your own tags for the text, only by appoint the tags ```tags``` :
 ```
 mkLabelMiddle = MKLabel(frame: CGRect(x: 0, y: 450 + baseY, width: self.view.frame.size.width, height: 100))
             mkLabelMiddle?.text = "swift,#topic# D#o @any additional setup after loading the view, typically nice from@gmail.com a nib,772078507@qq.com after loading the @view, typically from a nibd,Hello"
