@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MKTagModel: AnyObject {
+class MKTagModel {
     var range : NSRange? // tag text range
     var text : String? // tag text
 }

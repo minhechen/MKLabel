@@ -144,7 +144,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func startFadeLabelAnimation() {
+    @objc func startFadeLabelAnimation() {
         if temView == nil {
             self.setUpViewContent()
         }else{

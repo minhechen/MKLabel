@@ -178,7 +178,7 @@ class MKLabel: UILabel {
         }
     }
     
-    func updateLabelDisplay(displayLink: CADisplayLink) -> Void {
+    @objc func updateLabelDisplay(displayLink: CADisplayLink) -> Void {
         guard self.attributedTextString != nil else {
             return
         }
@@ -191,7 +191,7 @@ class MKLabel: UILabel {
         for index in 0..<attributedLength! {
             
             self.attributedTextString?.enumerateAttributes(in: NSMakeRange(index, 1), options: NSAttributedString.EnumerationOptions.longestEffectiveRangeNotRequired, using: {(value, range, error) -> Void in
-                let colorA = value[NSForegroundColorAttributeName] as! UIColor
+                let colorA = value[NSAttributedStringKey.foregroundColor] as! UIColor
                 let colorAlpha = colorA.cgColor.alpha
                 let isNeedUpdate = (nowTime - self.beginTime!) > self.delayTimeArray[index] || (isFadeIn && colorAlpha < 1.0) || (!isFadeIn && colorAlpha > 0.0)
                 if isNeedUpdate == false {
@@ -203,7 +203,7 @@ class MKLabel: UILabel {
                 }
 //                let color = self.textColor.withAlphaComponent(CGFloat(percentage))
                 let color = colorA.withAlphaComponent(CGFloat(percentage))
-                self.attributedTextString?.addAttribute(NSForegroundColorAttributeName, value: color, range: range)
+                self.attributedTextString?.addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: range)
             })
         }
         super.attributedText = self.attributedTextString
@@ -225,14 +225,14 @@ class MKLabel: UILabel {
         if self.isFadeIn == false {
             color = self.textColor.withAlphaComponent(1)
         }
-        mutableAttributedText.addAttribute(NSForegroundColorAttributeName, value: color, range: NSRange(location: 0, length: attributedText.length))
+        mutableAttributedText.addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: NSRange(location: 0, length: attributedText.length))
         //////////////////
         // add line spacing
         let paragraphStyle = self.mkParagraphStyle()
 //        paragraphStyle.lineHeightMultiple = lineHeightMultiple
         
         // Line spacing attribute
-        mutableAttributedText.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attributedText.length))
+        mutableAttributedText.addAttribute(NSAttributedStringKey.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedText.length))
         
         return mutableAttributedText
     }
@@ -271,7 +271,7 @@ class MKLabel: UILabel {
         let mailPattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
         let mailMatches = RegexManager.shared.match(input: self.text!, pattern: mailPattern)
         for mItem in mailMatches {
-            self.attributedTextString?.addAttribute(NSForegroundColorAttributeName, value: tagColor, range: mItem.range)
+            self.attributedTextString?.addAttribute(NSAttributedStringKey.foregroundColor, value: tagColor, range: mItem.range)
             let model = MKTagModel()
             model.range = mItem.range
             model.text = self.text?.substring(with: (self.text?.range(from: mItem.range))!)
@@ -287,7 +287,7 @@ class MKLabel: UILabel {
             let model = MKTagModel()
             model.range = mItem.range
             model.text = self.text?.substring(with: (self.text?.range(from: mItem.range))!)
-            self.attributedTextString?.addAttribute(NSForegroundColorAttributeName, value: tagColor, range: mItem.range)
+            self.attributedTextString?.addAttribute(NSAttributedStringKey.foregroundColor, value: tagColor, range: mItem.range)
             tagsModelArray.append(model)
         }
         
@@ -295,7 +295,7 @@ class MKLabel: UILabel {
         let topicPattern = "#[^#]+#"
         let topicMatches = RegexManager.shared.match(input: self.text!, pattern: topicPattern)
         for mItem in topicMatches {
-            self.attributedTextString?.addAttribute(NSForegroundColorAttributeName, value: tagColor, range: mItem.range)
+            self.attributedTextString?.addAttribute(NSAttributedStringKey.foregroundColor, value: tagColor, range: mItem.range)
             let model = MKTagModel()
             model.range = mItem.range
             model.text = self.text?.substring(with: (self.text?.range(from: mItem.range))!)
@@ -316,7 +316,7 @@ class MKLabel: UILabel {
             
             let mMatches = RegexManager.shared.match(input: self.text!, pattern: mPattern)
             for mItem in mMatches {
-                self.attributedTextString?.addAttribute(NSForegroundColorAttributeName, value: tagColor, range: mItem.range)
+                self.attributedTextString?.addAttribute(NSAttributedStringKey.foregroundColor, value: tagColor, range: mItem.range)
                 let model = MKTagModel()
                 model.range = mItem.range
                 model.text = self.text?.substring(with: (self.text?.range(from: mItem.range))!)
@@ -423,7 +423,7 @@ class MKLabel: UILabel {
         let paragraphStyle = self.mkParagraphStyle()
         
         // mutable attributed string with mutable paragraph style
-        mutableAttrStr.addAttributes([NSFontAttributeName:font,NSParagraphStyleAttributeName:paragraphStyle], range: NSMakeRange(0, mutableAttrStr.length))
+        mutableAttrStr.addAttributes([NSAttributedStringKey.font:font,NSAttributedStringKey.paragraphStyle:paragraphStyle], range: NSMakeRange(0, mutableAttrStr.length))
         let framesetter = CTFramesetterCreateWithAttributedString(mutableAttrStr)
         
         // get the frame size of core text
@@ -463,7 +463,7 @@ class MKLabel: UILabel {
             let subAttributedString = NSMutableAttributedString.init(attributedString: (tapEffectDictionary?.values.first)!)
             let range = NSRangeFromString(tapEffectDictionary!.keys.first!)
             if status == true {
-                subAttributedString.addAttribute(NSBackgroundColorAttributeName, value: UIColor.lightGray, range: NSMakeRange(0, subAttributedString.length))
+                subAttributedString.addAttribute(NSAttributedStringKey.backgroundColor, value: UIColor.lightGray, range: NSMakeRange(0, subAttributedString.length))
                 attributedString.replaceCharacters(in: range, with: subAttributedString)
             }else {
                 attributedString.replaceCharacters(in: range, with: subAttributedString)
@@ -527,9 +527,12 @@ private extension String {
     
     // get NSRange from Range
     func nsRange(from range: Range<String.Index>) -> NSRange {
-        let from = range.lowerBound.samePosition(in: utf16)
-        let to = range.upperBound.samePosition(in: utf16)
-        return NSRange(location: utf16.distance(from: utf16.startIndex, to: from),length: utf16.distance(from: from, to: to))
+//        let from = range.lowerBound.samePosition(in: utf16)
+//        let to = range.upperBound.samePosition(in: utf16)
+//        return NSRange(location: utf16.distance(from: utf16.startIndex, to: from),length: utf16.distance(from: from, to: to))
+        let start = distance(from: utf16.startIndex, to: range.lowerBound)
+        let length = distance(from: range.lowerBound, to: range.upperBound)
+        return NSMakeRange(start, length)
     }
     
     // get Range from NSRange
@@ -545,6 +548,7 @@ private extension String {
     
     // get string from Range
     func rangeString(from range: Range<String.Index>) -> String {
-        return self.substring(with: range)
+        return String(self[range.lowerBound..<range.upperBound])
+//        return self.substring(with: range)
     }
 }

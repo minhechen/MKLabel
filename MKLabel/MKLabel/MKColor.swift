@@ -12,7 +12,8 @@ class MKColor: NSObject {
     
     // get color with red,green,blue and alpha value
     class func withRgba(_ r:Float, g:Float, b:Float, a:Float) -> UIColor {
-        let color = UIColor.init(colorLiteralRed: r, green: g, blue: b, alpha: a)
+//        let color = UIColor.init(colorLiteralRed: r, green: g, blue: b, alpha: a)
+        let color = UIColor.init(red: CGFloat(r), green: CGFloat(g), blue: CGFloat(b), alpha: CGFloat(a))
         return color
     }
     

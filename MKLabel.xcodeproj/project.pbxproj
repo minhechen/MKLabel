@@ -17,7 +17,7 @@
 		8194306A1FDFE79000A99526 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8194305A1FDFE79000A99526 /* Info.plist */; };
 		8194306B1FDFE79000A99526 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8194305B1FDFE79000A99526 /* Launch Screen.storyboard */; };
 		8194306C1FDFE79000A99526 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8194305D1FDFE79000A99526 /* MKColor.swift */; };
-		8194306D1FDFE79000A99526 /* MKFadeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8194305E1FDFE79000A99526 /* MKFadeLabel.swift */; };
+		8194306D1FDFE79000A99526 /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8194305E1FDFE79000A99526 /* MKLabel.swift */; };
 		8194306E1FDFE79000A99526 /* MKTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8194305F1FDFE79000A99526 /* MKTagModel.swift */; };
 		8194306F1FDFE79000A99526 /* RegexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819430601FDFE79000A99526 /* RegexManager.swift */; };
 		819430701FDFE79000A99526 /* baiduExample.gif in Resources */ = {isa = PBXBuildFile; fileRef = 819430621FDFE79000A99526 /* baiduExample.gif */; };
@@ -55,7 +55,7 @@
 		8194305A1FDFE79000A99526 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8194305B1FDFE79000A99526 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		8194305D1FDFE79000A99526 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKColor.swift; sourceTree = "<group>"; };
-		8194305E1FDFE79000A99526 /* MKFadeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKFadeLabel.swift; sourceTree = "<group>"; };
+		8194305E1FDFE79000A99526 /* MKLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLabel.swift; sourceTree = "<group>"; };
 		8194305F1FDFE79000A99526 /* MKTagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTagModel.swift; sourceTree = "<group>"; };
 		819430601FDFE79000A99526 /* RegexManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexManager.swift; sourceTree = "<group>"; };
 		819430621FDFE79000A99526 /* baiduExample.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = baiduExample.gif; sourceTree = "<group>"; };
@@ -109,6 +109,7 @@
 		819430521FDFE79000A99526 /* MKLabel */ = {
 			isa = PBXGroup;
 			children = (
+				8194305C1FDFE79000A99526 /* MKLabel */,
 				819430531FDFE79000A99526 /* ADDisplayView.swift */,
 				819430541FDFE79000A99526 /* AppDelegate.swift */,
 				819430551FDFE79000A99526 /* Assets.xcassets */,
@@ -116,7 +117,6 @@
 				819430581FDFE79000A99526 /* Main.storyboard */,
 				8194305A1FDFE79000A99526 /* Info.plist */,
 				8194305B1FDFE79000A99526 /* Launch Screen.storyboard */,
-				8194305C1FDFE79000A99526 /* MKLabel */,
 				819430611FDFE79000A99526 /* ScreenShot */,
 				819430641FDFE79000A99526 /* ViewController.swift */,
 			);
@@ -127,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				8194305D1FDFE79000A99526 /* MKColor.swift */,
-				8194305E1FDFE79000A99526 /* MKFadeLabel.swift */,
+				8194305E1FDFE79000A99526 /* MKLabel.swift */,
 				8194305F1FDFE79000A99526 /* MKTagModel.swift */,
 				819430601FDFE79000A99526 /* RegexManager.swift */,
 			);
@@ -336,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8194306D1FDFE79000A99526 /* MKFadeLabel.swift in Sources */,
+				8194306D1FDFE79000A99526 /* MKLabel.swift in Sources */,
 				8194306F1FDFE79000A99526 /* RegexManager.swift in Sources */,
 				8194306C1FDFE79000A99526 /* MKColor.swift in Sources */,
 				8194306E1FDFE79000A99526 /* MKTagModel.swift in Sources */,
@@ -536,7 +536,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.minhechen.MKLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -550,7 +550,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.minhechen.MKLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -564,6 +564,7 @@
 				819430A61FDFEBFE00A99526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		819430B21FDFEC1300A99526 /* Build configuration list for PBXNativeTarget "MKLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +573,7 @@
 				819430B41FDFEC1300A99526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81F9F2171FBD3E6000B7834C /* Build configuration list for PBXProject "MKLabel" */ = {
 			isa = XCConfigurationList;

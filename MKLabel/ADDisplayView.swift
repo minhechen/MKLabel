@@ -76,7 +76,7 @@ class ADDisplayView: UIView {
     }
     
     // close ad view
-    func closeAdAction(_ sender: UIButton) -> Void {
+    @objc func closeAdAction(_ sender: UIButton) -> Void {
         self.stopTimer()
         self.hideAdView()
     }
@@ -91,8 +91,8 @@ class ADDisplayView: UIView {
         }
     }
     
-    // timer action
-    func timerAction() -> Void {
+    // timer actio@objc n
+    @objc func timerAction() -> Void {
         if adTimerInternal == 3 {
             print("close ad")
             self.stopTimer()
