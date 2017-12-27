@@ -7,7 +7,7 @@ MKLabel
 ## The uesage example that used in weibo(微博) landing page effect
 ![Baidu](https://github.com/minhechen/MKLabel/blob/master/MKLabel/ScreenShot/weiboExample.gif)
 
-## The uesage example that used in baidu(百度) welcome ad effect
+## The uesage example that used in baidu(百度) landing page effect
 ![Weibo](https://github.com/minhechen/MKLabel/blob/master/MKLabel/ScreenShot/baiduExample.gif)
 
 ## Create a fantastic UILabel with fade in or fade out effect
